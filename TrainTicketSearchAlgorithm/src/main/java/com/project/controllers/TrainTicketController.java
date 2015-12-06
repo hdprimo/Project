@@ -12,9 +12,9 @@ public class TrainTicketController {
 
 	private TrainTicketService ttService = new TrainTicketService();
 	
-	public IResponse search(String wordSearch){
+	public IResponse search(String stationToSearch){
 		IResponse response = new Response();		
-		search(wordSearch, ttService.getAllStations(), response);
+		search(stationToSearch, ttService.getAllStations(), response);
 		
 		return response;
 	}
