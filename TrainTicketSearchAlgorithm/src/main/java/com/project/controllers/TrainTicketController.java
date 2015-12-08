@@ -30,7 +30,7 @@ public class TrainTicketController {
 		int index = stations.indexOf(stationToSearch);
 		
 		if(index > -1){
-			result.addStation(stations.get(index));
+			result.getStations().add(stations.get(index));
 		}
 		
 		return index;		

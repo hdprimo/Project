@@ -28,10 +28,6 @@ public class Response implements Serializable,IResponse {
 		this.stations = stations;
 	}
 	
-	public void addStation(IStation station){
-		getStations().add(station);
-	}
-	
 	public String printStationNames(){
 		StringBuilder stationNames = new StringBuilder();
 		if(stations != null){
